@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+        <h1>{{ session['count'] }}</h1>
+        <!-- <h1>{{ session['increment'] }}</h1> -->
+        <a href="/destroy_session"> <button>Reset</button></a>
+        <a href="/plus_two"> <button>+2</button></a>
+        <form action="/increment" method="post">
+            <label for="increment">Increment</label>
+            <input type="number" name= "number">
+            <input type="submit">
+        </form>
+</body>
+</html>
